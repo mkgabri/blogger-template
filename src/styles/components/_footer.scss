@@ -1,0 +1,29 @@
+/* Footer */
+.main {
+  &-footer {
+    height: $footer-height;
+    background: #444957;
+    &__block {
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+    }
+    
+    h2{
+      color: #fff;
+      margin-bottom: 0;
+    }
+    
+    .social-list {
+      display: flex;
+      &__item {
+        margin: 0 8px;
+      }
+      &__link {
+        img {
+          width: 30px; 
+        }
+      }
+    }
+  }
+}
