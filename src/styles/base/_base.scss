@@ -6,13 +6,13 @@
 
 body {
   margin: 0;
-  font-family: lato, sans-serif;
   font-size: var(--body-font-size);
 }
 
 a {
   text-decoration: none;
-  color: inherit;
+//  color: inherit;
+  color: var(--text-gray);
 }
 
 img {

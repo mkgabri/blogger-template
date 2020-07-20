@@ -11,6 +11,7 @@
     font-size: var(--banner-text-size);
     padding: 1rem 0;
     text-decoration: none;
+    font-family: var(--Abel);
     display: block;
   }
   .nav-items {
@@ -19,6 +20,9 @@
       padding: 1.6rem 1rem;
       font-size: 1.1rem;
       position: relative;
+      a{
+        
+      }
     }
   }
   .social {
