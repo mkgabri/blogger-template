@@ -1,7 +1,10 @@
 /* Header */
 .main {
   &-header {
-    height: $header-height;
+    height: 100vh;
+    @include from(m){
+      height: $header-height;
+    }
 
   }
 

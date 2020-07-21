@@ -6,29 +6,65 @@
   overflow: hidden;
   .nav-menu {
     justify-content: space-between;
+    flex-direction: column;
+    @include from(m) {
+      flex-direction: row;
+    }
   }
   .nav-brand a {
     font-size: var(--banner-text-size);
+    color: var(--text-gray);
     padding: 1rem 0;
-    text-decoration: none;
-    font-family: var(--Abel);
+    font-family: var(--Lexend);
     display: block;
   }
   .nav-items {
     display: flex;
+    flex-direction: column;
+    @include from(m) {
+      flex-direction: row;
+    }
     .nav-link {
       padding: 1.6rem 1rem;
       font-size: 1.1rem;
       position: relative;
+      font-family: var(--Abel);
+      color: var(--text-light-gray);
+      &:hover {
+        color: var(--text-white);
+        background-color: var(--midnight);
+      }
       a{
-        
       }
     }
   }
   .social {
     padding: 1.4rem 0;
+    i {
+      padding: 0 .2rem;
+      &:hover {
+        opacity: .5;
+      }
+    }
   }
-  
+  .toggle-collapse {
+    position: absolute;
+    top: 0;
+    width: 90%;
+    cursor: pointer;
+    @include from(m) {
+      display: none;
+    }
+    .toggle-icons {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1.7rem 0;
+      i {
+        font-size: 1.4rem;
+        
+      }
+    }
+  }
 }
 
 .flex-row {
