@@ -1,0 +1,32 @@
+
+
+/* main */
+main {
+  .site-title {
+    background: url('../images/Background-image.png');
+    background-size: cover;
+    height: 115vh;
+    display: flex;
+    justify-content: center;
+    .site-background {
+      padding-top: 10rem;
+      text-align: center;
+      color: var(--text-white);
+      h1, h3 {
+        margin: .3rem;
+      }
+      .btn {
+        margin: 1.8rem;
+        background: var(--midnight);
+        border-radius: 2rem; //dovrebbe essere in _base.pug
+        padding: 1rem 3rem; //dovrebbe essere in _base.pug
+        font-size: 1rem;
+        font-family: var(--Livvic);
+        &:hover {
+          background: transparent;
+          border: 1px solid var(--border-white);
+          color: var(--text-white);       }
+      }
+    }
+  }
+}

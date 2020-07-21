@@ -5,6 +5,7 @@
 @import "theme/theme";
 @import "components/header";
 @import "components/nav";
+@import "components/main";
 @import "components/footer";
 
 /* body color */
@@ -21,6 +22,10 @@ body {
 }
 
 header {
+  grid-column: 1/ span 12;
+}
+
+main {
   grid-column: 1/ span 12;
 }
 

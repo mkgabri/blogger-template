@@ -31,10 +31,18 @@ const config = {
         use: ["pug-loader"]
       },
       {
+        test: /\.(png|svg|jpg|gif)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'images'
+        }
+      },
+      {
         test: /\.scss$/,
         use: [
-          {loader: MiniCssExtractPlugin.loader},
-          //{loader: 'style-loader'},
+          //{loader: MiniCssExtractPlugin.loader},
+          {loader: 'style-loader'},
           {loader: 'css-loader'},
           {loader: 'sass-loader'}
         ]

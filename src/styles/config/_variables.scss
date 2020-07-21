@@ -1,5 +1,5 @@
 $max-width: 1200px;
-$header-height: 40vh;
+$header-height: 5rem;
 $footer-height: 8rem;
 
 $bg-white-color: #fafafa;
@@ -17,6 +17,8 @@ $breakpoints: (
   --text-gray: #3f4954;
   --text-light-gray: #686666;
   --text-white: #fff;
+  
+  --border-white: #fff;
   
   --terra-cotta: #ed6a5a;
   --spring-bud: #f4f1bb;

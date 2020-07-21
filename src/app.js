@@ -1,4 +1,5 @@
 import style from './styles/style.scss';
+//import bg-title from './images/Background-image.png';
 
 import $ from 'jquery';
 
@@ -11,3 +12,5 @@ $(document).ready(function(){
     $('.nav').toggleClass('collapse');
   })
 });
+
+//$('.site-title').css("background-image", "url(bt-title)");  
