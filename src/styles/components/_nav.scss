@@ -2,8 +2,9 @@
 .nav {
   background: $bg-white-color;
   padding: 0 2rem;
-  min-height: 100%;
   overflow: hidden;
+  height: 5rem;
+  transition: height .5s;
   .nav-menu {
     justify-content: space-between;
     flex-direction: column;
@@ -65,6 +66,10 @@
       }
     }
   }
+}
+
+.collapse {
+  height: 25rem;
 }
 
 .flex-row {

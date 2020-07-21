@@ -1,9 +1,9 @@
 /* Header */
 .main {
   &-header {
-    height: 100vh;
+//    height: 100vh;
     @include from(m){
-      height: $header-height;
+//      height: $header-height;
     }
 
   }
