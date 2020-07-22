@@ -8,6 +8,10 @@
 @import "components/main";
 @import "components/footer";
 
+/* terze parti */
+@import "vendor/owl.carousel.min.scss";
+@import "vendor/owl.theme.default.min.scss";
+
 /* body color */
 body {
   background: #f5f5f5;

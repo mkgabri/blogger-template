@@ -18,8 +18,6 @@ main {
       .btn {
         margin: 1.8rem;
         background: var(--midnight);
-        border-radius: 2rem; //dovrebbe essere in _base.pug
-        padding: 1rem 3rem; //dovrebbe essere in _base.pug
         font-size: 1rem;
         font-family: var(--Livvic);
         &:hover {
@@ -27,6 +25,36 @@ main {
           border: 1px solid var(--border-white);
           color: var(--text-white);       }
       }
+    }
+  }
+  .blog {
+    background: url('../images/Abract01.png') no-repeat;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+    &-post {
+      padding-top: 6rem; 
+      display: flex;
+      overflow-x: scroll;
+    }
+    &-content {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      min-width: 38%;
+      margin: 3rem 2rem;
+      box-shadow: 0 15px 20px rgba(0,0,0,.2);
+      .btn-blog {
+        padding: .7rem 2rem;
+        background: var(--midnight);
+        margin: .5rem;
+      }
+      span {
+        display: block;
+      }
+    }
+    &-title {
+      padding: 2rem 0;
     }
   }
 }

@@ -48,6 +48,13 @@ h3 {
 button {
   border: none;
   cursor: pointer;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  background: var(--alabaster);
+}
+
+span {
+  font-family: var(--Abel);
 }
 
 
