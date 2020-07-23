@@ -1,6 +1,6 @@
 $max-width: 1200px;
 $header-height: 5rem;
-$footer-height: 8rem;
+$footer-height: auto;
 
 $bg-white-color: #fafafa;
 $border-color: #ccc;
@@ -17,6 +17,7 @@ $breakpoints: (
   --text-gray: #3f4954;
   --text-light-gray: #686666;
   --text-white: #fff;
+  --text-black: #000;
   
   --border-white: #fff;
   
@@ -26,6 +27,7 @@ $breakpoints: (
   --alabaster: #e6ebe0;
   --blue-egg: #36c9c6;
   --midnight: #006d77;
+  --sky: #bce1e5;
   
   --near-moon: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
 }

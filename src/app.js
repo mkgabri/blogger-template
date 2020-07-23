@@ -1,5 +1,6 @@
+import AOS from './vendor/aos.js';
 import style from './styles/style.scss';
-import owl from './vendor/owl.carousel.min.js';
+//import owl from './vendor/owl.carousel.min.js';
 
 import $ from 'jquery';
 
@@ -13,5 +14,15 @@ $(document).ready(function(){
   })
   
   // owl carousel for blog
-  $('.owl-carousel').owlCarousel();
+//  $('.owl-carousel').owlCarousel();
+  
+  
+  // click rto scroll up
+  $('.move-up span').click(function() {
+    console.log($('body').scrollTop());
+    $('body').scrollTop(0);
+  })
+  
+  AOS.init();
+  
 });

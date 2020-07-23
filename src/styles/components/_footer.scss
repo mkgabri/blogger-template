@@ -1,28 +1,82 @@
 /* Footer */
-.main {
-  &-footer {
-    height: $footer-height;
-    background: #444957;
-    &__block {
-      justify-content: space-between;
-      align-items: center;
-      height: 100%;
+footer.footer {
+  height: 100%;
+  background: $dark-color;
+  position: relative;
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    @include from(m) {
+      grid-template-columns: repeat(2, 1fr);
     }
-    
-    h2{
-      color: #fff;
-      margin-bottom: 0;
+    @include from(l) {
+      grid-template-columns: repeat(4, 1fr);
     }
-    
-    .social-list {
-      display: flex;
-      &__item {
-        margin: 0 8px;
-      }
-      &__link {
-        img {
-          width: 30px; 
+    padding: 0 3rem;
+    > div {
+      flex-grow: 1;
+      flex-basis: 0;
+      padding: 3rem .9rem;
+    }
+    h2 {
+      color: var(--text-white);
+    }
+    .newsletter {
+      .form-element {
+        display: flex;
+        align-items: center;
+        input {
+          padding: .5rem .7rem;
+          border: none;
+          background: var(--text-black);
+          color: var(--text-white);
+          font-family: var(--Josefin);
+          font-size: 1rem;
+          width: 74%;
         }
+        span {
+          background: var(--sky);
+          padding: .3rem .7rem;
+          cursor: pointer;
+        }
+      }
+    }
+    .instagram {
+      div > img {
+        display: inline-block;
+        width: 25%;
+        height: 50%;
+        margin: .3rem .4rem;
+      }
+    }
+    .follow {
+      div i {
+        color: var(--text-white);
+        padding: 0 .4rem;
+      }
+    }
+  }
+  .rights {
+    justify-content: center;
+    font-family: var(--Josefin);
+    margin-bottom: .5rem;
+    padding: 0 1.4rem;
+    h4 {
+      color: var(--text-light-gray);
+      a {
+      color: var(--text-white);
+      }
+    }
+  }
+  .move-up {
+    position: absolute;
+    right: 6%;
+    top: 50%;
+    span {
+      color: var(--midnight);
+      &:hover {
+        color: var(--text-white);
+        cursor: pointer;
       }
     }
   }

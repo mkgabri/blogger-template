@@ -30,8 +30,11 @@ main {
   .blog {
     background: url('../images/Abract01.png') no-repeat;
     background-position: right;
-    height: 100vh;
+    height: 110vh;
     width: 100%;
+    @include from(m) {
+      height: 100vh;
+    }
     &-post {
       padding-top: 6rem; 
       display: flex;
@@ -41,12 +44,15 @@ main {
       display: flex;
       flex-direction: column;
       text-align: center;
-      min-width: 38%;
+      min-width: 85%;
       margin: 3rem 2rem;
       box-shadow: 0 15px 20px rgba(0,0,0,.2);
+      @include from(m) {
+        min-width: 30%;
+      }
       .btn-blog {
         padding: .7rem 2rem;
-        background: var(--midnight);
+        background: var(--sky);
         margin: .5rem;
       }
       span {
@@ -54,7 +60,160 @@ main {
       }
     }
     &-title {
-      padding: 2rem 0;
+      padding: 2rem .5rem;
+    }
+  }
+  .container {
+    margin: 0 5vw;
+  }
+  .site-content {
+    display: grid;
+    @include from(m){
+      grid-template-columns: 70% 30%;
+    }
+    padding-top: 3rem;
+    .post {
+      &-content {
+        margin-bottom: 5rem;
+        width: 100%;
+//        border-bottom: 1px solid var(--text-light-gray);
+        > .post-image, .post-title {
+          padding: 1rem 2rem;
+          position: relative;
+        }
+      }
+      &-image {
+        div {
+          overflow: hidden;
+          .img {
+            width: 100%;
+            transition: transform .3s;
+            &:hover {
+              transform: scale(1.15);
+            }
+          }
+        }
+      }
+      &-info {
+        background: var(--sky);
+        padding: 1rem;
+        position: absolute;
+        left: 2rem;
+        bottom: 1.2rem;
+//        border-radius: 0;
+        @include from(l) {
+          bottom: 0;
+          left: 25%;
+          border-radius: 3rem;
+        }
+        span > i {
+          margin-right: 5px;
+        }
+        span {
+          margin: 0 .5rem;
+        }
+      }
+      &-title {
+        a {
+          font-family: var(--Anton);
+          font-size: 1.5rem;
+        }
+      }
+      &-btn {
+        border-radius: 0;
+        padding: .7rem 1.5rem;
+        background: var(--sky);
+      }
+    }
+    .pagination {
+      justify-content: center;
+      color: var(--text-gray);
+      margin: 4rem 0;
+      a {
+        padding: .6rem .9rem;
+        border-radius: 2rem;
+        margin: 0 .3rem;
+        font-family: var(--Lexend);
+        &.page {
+          background: var(--text-gray);
+          color: var(--text-white);
+        }
+      }
+    }
+    
+    .sidebar {
+      .category-list {
+        font-family: var(--Livvic);
+        margin-left: 5vw;
+        .list-items {
+          background: var(--sky);
+          padding: .4rem 1rem;
+          margin: .8rem 0;
+          border-radius: 3rem;
+//          width: 70%;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+      .popular-post {
+        .post-content {
+          padding: 1rem 0;
+        }
+        h2 {
+          padding-top: 8rem;
+        }
+        .post-info {
+          padding: .4rem .1rem;
+          bottom: 0;
+          left: 1.5rem;
+          border-radius: 0;
+          background: white;
+        }
+        .post-title {
+          a {
+            font-size: 1rem
+          }
+        }
+      }
+      
+      .newsletter {
+        padding-top: 10rem;
+        h2 {
+          margin-bottom: 1rem;
+        }
+        .form-element {
+          padding: .5rem 2rem;
+        }
+        .input-element {
+          width: 80%;
+          height: 1.9rem;
+          padding: .3rem .5rem;
+          font-family: var(--Lexend);
+          font-size: 1rem;
+        }
+        .form-btn {
+          border-radius: 0;
+          width: 80%;
+          padding: .8rem 32%;
+          margin: 1rem 0;
+          background: var(--sky);
+        }
+      }
+          
+      .popular-tags {
+        padding: 5rem 0;
+        h2 {
+          margin-bottom: 1rem;
+        }
+        .tags {
+          .tag {
+            background: var(--sky);
+            padding: .4rem 1rem;
+            border-radius: 3rem;
+            margin: .4rem .6rem;
+          }
+        }
+      }
     }
   }
 }

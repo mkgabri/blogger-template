@@ -1,6 +1,6 @@
 main
   section.site-title
-    .site-background
+    .site-background(data-aos="fade-up" data-aos-delay="1400")
       h3 Tours & Travles
       h1 Amazing Place on Earth
       button.btn Explore
@@ -11,33 +11,204 @@ main
       .container
         //.owl-carousel.owl-theme
         .blog-post
-          .blog-content
+          .blog-content(data-aos="fade-right" data-aos-delay="200")
             img(src="./src/images/Blog-post/post-1.jpg" alt="post-1")
             .blog-title
               h3 London fashion week's continued the evolution
               button.btn.btn-blog Fashion
               span 2 minutes
-          .blog-content
+          .blog-content(data-aos="fade-in" data-aos-delay="200")
             img(src="./src/images/Blog-post/post-2.jpg" alt="post-2")
             .blog-title
               h3 London fashion week's continued the evolution
               button.btn.btn-blog Fashion
               span 2 minutes
-          .blog-content
+          .blog-content(data-aos="fade-left" data-aos-delay="200")
             img(src="./src/images/Blog-post/post-3.jpg" alt="post-3")
             .blog-title
               h3 London fashion week's continued the evolution
               button.btn.btn-blog Fashion
               span 2 minutes
           .blog-content
-            img(src="./src/images/Blog-post/post-7.jpg" alt="post-4")
+            img(src="./src/images/Blog-post/post-4.png" alt="post-4")
             .blog-title
               h3 London fashion week's continued the evolution
               button.btn.btn-blog Fashion
               span 2 minutes
           .blog-content
-            img(src="./src/images/Blog-post/post-8.jpg" alt="post-5")
+            img(src="./src/images/Blog-post/post-5.png" alt="post-5")
             .blog-title
               h3 London fashion week's continued the evolution
               button.btn.btn-blog Fashion
               span 2 minutes
+  section.container
+    .site-content
+      .posts
+        .post-content(data-aos="zoom-in" data-aos-delay="200")
+          .post-image
+            div
+              img(src="./src/images/Blog-post/blog1.png" alt="blog1").img
+            .post-info.flex-row
+              span
+                i.fas.fa-user.text-gray 
+                |  Admin
+              span
+                i.fas.fa-calendar-alt.text-gray
+                | January 14, 2019
+              span 2 Comments
+          .post-title
+            a(href="#") Why should boys have all the fun?
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            button.btn.post-btn Read More 
+              i.fas.fa-arrow-right
+        .post-content(data-aos="zoom-in" data-aos-delay="200")
+          .post-image
+            div
+              img(src="./src/images/Blog-post/blog2.png" alt="blog1").img
+            .post-info.flex-row
+              span
+                i.fas.fa-user.text-gray 
+                |  Admin
+              span
+                i.fas.fa-calendar-alt.text-gray
+                | January 16, 2019
+              span 7 Comments
+          .post-title
+            a(href="#") Why should boys have all the fun?
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            button.btn.post-btn Read More 
+              i.fas.fa-arrow-right
+        .post-content(data-aos="zoom-in" data-aos-delay="200")
+          .post-image
+            div
+              img(src="./src/images/Blog-post/blog3.png" alt="blog1").img
+            .post-info.flex-row
+              span
+                i.fas.fa-user.text-gray 
+                |  Admin
+              span
+                i.fas.fa-calendar-alt.text-gray
+                | January 19, 2019
+              span 7 Comments
+          .post-title
+            a(href="#") Why should boys have all the fun?
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            button.btn.post-btn Read More 
+              i.fas.fa-arrow-right
+        .post-content(data-aos="zoom-in" data-aos-delay="200")
+          .post-image
+            div
+              img(src="./src/images/Blog-post/blog4.png" alt="blog1").img
+            .post-info.flex-row
+              span
+                i.fas.fa-user.text-gray 
+                |  Admin
+              span
+                i.fas.fa-calendar-alt.text-gray
+                | January 21, 2019
+              span 5 Comments
+          .post-title
+            a(href="#") Why should boys have all the fun?
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            button.btn.post-btn Read More 
+              i.fas.fa-arrow-right
+        .pagination.flex-row
+          a(href="#")
+            i.fas.fa-chevron-left
+          a(href="#").page 1
+          a(href="#").page 2
+          a(href="#").page 3
+          a(href="#")
+            i.fas.fa-chevron-right
+      asidde.sidebar
+        .category
+          h2 Category
+          ul.category-list
+            li.list-items(data-aos="fade-left" data-aos-delay="100")
+              a(href="#") Software
+              span (05)
+            li.list-items(data-aos="fade-left" data-aos-delay="200")
+              a(href="#") Techonlogy
+              span (02)
+            li.list-items(data-aos="fade-left" data-aos-delay="300")
+              a(href="#") Lifestyle
+              span (07)
+            li.list-items(data-aos="fade-left" data-aos-delay="400")
+              a(href="#") Shopping
+              span (01)
+            li.list-items(data-aos="fade-left" data-aos-delay="500")
+              a(href="#") Food
+              span (08)
+        .popular-post
+          h2 Popular Post
+          .post-content(data-aos="flip-up" data-aos-delay="200")
+            .post-image
+              div
+                img(src="./src/images/popular-post/m-blog-1.jpg" alt="blog1").img
+              .post-info.flex-row
+                span
+                  i.fas.fa-calendar-alt.text-gray
+                  | January 21, 2019
+                span 5 Comments
+            .post-title
+              a(href="#") New dara recording system to better analyse road accidents
+          .post-content(data-aos="flip-up" data-aos-delay="200")
+            .post-image
+              div
+                img(src="./src/images/popular-post/m-blog-2.jpg" alt="blog2").img
+              .post-info.flex-row
+                span
+                  i.fas.fa-calendar-alt.text-gray
+                  | January 21, 2019
+                span 5 Comments
+            .post-title
+              a(href="#") New dara recording system to better analyse road accidents
+          .post-content(data-aos="flip-up" data-aos-delay="200")
+            .post-image
+              div
+                img(src="./src/images/popular-post/m-blog-3.jpg" alt="blog3").img
+              .post-info.flex-row
+                span
+                  i.fas.fa-calendar-alt.text-gray
+                  | January 21, 2019
+                span 5 Comments
+            .post-title
+              a(href="#") New dara recording system to better analyse road accidents
+          .post-content(data-aos="flip-up" data-aos-delay="200")
+            .post-image
+              div
+                img(src="./src/images/popular-post/m-blog-4.jpg" alt="blog4").img
+              .post-info.flex-row
+                span
+                  i.fas.fa-calendar-alt.text-gray
+                  | January 21, 2019
+                span 5 Comments
+            .post-title
+              a(href="#") New dara recording system to better analyse road accidents
+          .post-content(data-aos="flip-up" data-aos-delay="200")
+            .post-image
+              div
+                img(src="./src/images/popular-post/m-blog-5.jpg" alt="blog5").img
+              .post-info.flex-row
+                span
+                  i.fas.fa-calendar-alt.text-gray
+                  | January 21, 2019
+                span 5 Comments
+            .post-title
+              a(href="#") New dara recording system to better analyse road accidents
+        .newsletter(data-aos="fade-up" data-aos-delay="300")
+          h2 NewsLetter
+          .form-element
+            input(type="email" placeholder="Email").input-element
+            button.btn.form-btn Subscribe
+        .popular-tags
+          h2 Popular Tags
+          .tags.flex-row
+            span.tag(data-aos="flip-up" data-aos-delay="100") Software
+            span.tag(data-aos="flip-up" data-aos-delay="200") Technology
+            span.tag(data-aos="flip-up" data-aos-delay="300") Travel
+            span.tag(data-aos="flip-up" data-aos-delay="400") Illustration
+            span.tag(data-aos="flip-up" data-aos-delay="500") Design
+            span.tag(data-aos="flip-up" data-aos-delay="600") lifestyle
+            span.tag(data-aos="flip-up" data-aos-delay="700") love
+            span.tag(data-aos="flip-up" data-aos-delay="800") Project
